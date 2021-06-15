@@ -1,0 +1,55 @@
+.random-card {
+    width: 80%;
+    height: 400px;
+    margin: 0px;
+    border-radius:20px;
+    background-color: #ac209c;
+    display: grid;
+    align-items: start;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 1fr 1fr 2fr 1fr 2fr;
+    gap: 0px;
+}
+
+.random-drink-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 6;
+}
+
+.random-drink-name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    font-weight: 500;
+    text-transform: uppercase;
+    width: 100%;
+    margin: 10px 0px;
+    color: white;
+    grid-column: 2 / 3;
+}
+
+.drink-info {
+    font-family: 'Inter', sans-serif;
+    font-weight: 100;
+    align-self: center;
+    margin: 0px;
+    color: white;
+    grid-column: 2 / 3;
+}
+
+.ingrediants-title, .directions-title {
+    font-size: 2em;
+    background-color: #6f1565;
+    padding: 3px;
+}
+
+.ingrediants-list, .directions {
+    font-size: 1.3em;
+    justify-self: center;
+    list-style-type: none;
+    padding: 0px 20px;
+}
