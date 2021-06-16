@@ -18,7 +18,7 @@ const RandomCard = () => {
 
 </p>
         </div>
-    )
+    );
 }
 
 export default RandomCard;

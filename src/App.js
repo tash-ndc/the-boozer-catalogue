@@ -1,14 +1,13 @@
-import DrinkCard from './Components/DrinkCard/DrinkCard';
-import RandomCard from './Components/RandomCard/RandomCard';
+import Header from './Features/Header/Header';
+import Nav from './Features/Nav/Nav';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <DrinkCard />
-      <br /><br />
-      <RandomCard />
-      <br /><br />
+      <Header />
+      <br /><br /><br /><br /><br /><br /><br />
+      <Nav />
     </div>
   );
 }
