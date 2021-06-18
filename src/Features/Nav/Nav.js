@@ -7,7 +7,9 @@ const Nav = () => {
         <div className='navbar'>
             <button className='categories'>categories</button>
             <button className='dealers-choice'>dealer's choice</button>
-            <input className='searchbar' />
+            <div className='searchbar'>    
+                <input className='search-input' />
+            </div>
         </div>
     );
 }

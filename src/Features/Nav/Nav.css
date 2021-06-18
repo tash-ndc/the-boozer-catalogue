@@ -1,0 +1,41 @@
+.navbar {
+    width: 100%;
+    height: 4em;
+    background-color: #31302b;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.categories, .dealers-choice {
+    background-color: #474439;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: light;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: white;
+    border: 1px solid #31302b;
+}
+
+.categories:hover, .dealers-choice:hover {
+    background-color: #1d1c18;
+}
+
+.categories {
+    grid-column: 1 / 2;
+}
+
+.dealers-choice {
+    grid-column: 2 / 3;
+}
+
+.searchbar {
+    background-color: #474439;
+    border: 1px solid #31302b;
+    grid-column: 3 / 4;
+}
+
+.search-input {
+    text-align: center;
+    vertical-align: center;
+}
