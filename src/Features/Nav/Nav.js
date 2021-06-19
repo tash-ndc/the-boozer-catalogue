@@ -7,8 +7,14 @@ const Nav = () => {
         <div className='navbar'>
             <button className='categories'>categories</button>
             <button className='dealers-choice'>dealer's choice</button>
-            <div className='searchbar'>    
-                <input className='search-input' />
+            <div className='search-area'>
+                <form className='searchbar'>    
+                    <input 
+                        className='search-input'
+                        placeholder='Search...'
+                    />
+                    <FiSearch className='search-button' />
+                </form>
             </div>
         </div>
     );
