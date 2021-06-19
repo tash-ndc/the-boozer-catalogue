@@ -3,4 +3,9 @@
   height: 1000px;
 }
 
+.header {
+  position: sticky;
+  top: 0;
+}
+
 
