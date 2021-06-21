@@ -1,74 +1,79 @@
 .navbar {
-    width: 100%;
-    height: 3.3em;
-    background-color: #31302b;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
+  width: 100%;
+  height: 3.3em;
+  background-color: #31302b;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
 }
 
-.categories, .dealers-choice {
-    background-color: #474439;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: light;
-    font-size: 30px;
-    text-transform: uppercase;
-    color: white;
-    border: 1px solid #31302b;
+.categories-btn,
+.dealers-choice-btn {
+  width: 100%;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: light;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: white;
+  border: 1px solid #31302b;
+  background-color: #474439;
 }
 
-.categories:hover, .dealers-choice:hover {
-    background-color: #1d1c18;
+.categories-btn:hover,
+.dealers-choice-btn:hover {
+  background-color: #1d1c18;
 }
 
-.categories {
-    grid-column: 1 / 2;
+.categories-btn {
+  grid-column: 1 / 2;
 }
 
-.dealers-choice {
-    grid-column: 2 / 3;
+.dealers-choice-btn {
+  grid-column: 2 / 3;
 }
 
 .search-area {
-    background-color: #474439;
-    border: 1px solid #31302b;
-    grid-column: 3 / 4;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: #474439;
+  border: 1px solid #31302b;
+  grid-column: 3 / 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .searchbar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
 }
 
 .search-input {
-    width: 90%;
-    height: 1.7em;
-    background-color: rgba(235, 235, 235, 0.85);
-    border: none;
-    border-radius: 0.5em 0 0 0.5em;
-    padding-left: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.1em;
+  width: 90%;
+  height: 1.7em;
+  background-color: rgba(235, 235, 235, 0.85);
+  border: none;
+  border-radius: 0.5em 0 0 0.5em;
+  padding-left: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
 }
 
 .search-input:focus {
-    outline: none;
+  outline: none;
 }
 
 .search-button {
-    font-size: 1.5em;
-    color: #545453;
-    padding: 4px;
-    background-color: rgba(235, 235, 235, 0.85);
-    border-radius: 0 0.4em 0.4em 0;
+  font-size: 1.5em;
+  color: #545453;
+  padding: 4px;
+  background-color: rgba(235, 235, 235, 0.85);
+  border-radius: 0 0.4em 0.4em 0;
 }
 
 .search-button:hover {
-    color: #464646;
-    background-color: rgba(192, 192, 192, 0.85);
+  color: #464646;
+  background-color: rgba(192, 192, 192, 0.85);
+  cursor: pointer;
 }
