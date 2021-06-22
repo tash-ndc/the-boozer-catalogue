@@ -1,11 +1,26 @@
 .dealers-choice {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr, 1fr;
+  grid-gap: 10px;
+  justify-items: center;
+  margin: 10px auto;
 }
 
 .shuffle-btn {
+  width: 15%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: light;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: white;
+  border: 1px solid #31302b;
+  background-color: #474439;
 }
 
 .shuffle-btn:hover {
-}
-
-.card {
+  background-color: #1d1c18;
 }

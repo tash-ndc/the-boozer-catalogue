@@ -1,24 +1,91 @@
-import React from 'react';
-import '../RandomCard/RandomCard.css';
-import testImg from './test_img.jpg';
+import React, { useEffect, useState } from "react";
+import "../RandomCard/RandomCard.css";
 
-const RandomCard = () => {
-    return (
-        <div className='random-card'>
-            <img className='random-drink-img' src={testImg} alt='test drink' />
-            <h1 className='random-drink-name'>Drink Name</h1>
-            <h2 className='ingrediants-title drink-info'>Ingrediants:</h2>
-            <ul className='ingrediants-list drink-info'>
-                <li>Ingrediant 1</li>
-                <li>Ingrediant 2</li>
-                <li>Ingrediant 3</li>
-            </ul>
-            <h2 className='directions-title drink-info'>Directions:</h2>
-            <p className='directions drink-info'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sem risus, finibus ac pretium vitae, auctor et justo. Ut fermentum.
+const RandomCard = (props) => {
+  const [color, setColor] = useState("");
+  let recipe = [];
 
-</p>
-        </div>
-    );
-}
+  const getColors = () => {
+    switch (props.drink.strCategory) {
+      case "Ordinary Drink":
+        setColor("pink");
+        break;
+      case "Cocktail":
+        setColor("blue");
+        break;
+      case "Punch / Party Drink":
+        setColor("red");
+        break;
+      case "Shot":
+        setColor("green");
+        break;
+      case "Homemade Liqueur":
+        setColor("orange");
+        break;
+      case "Beer":
+        setColor("yellow");
+        break;
+      default:
+        setColor("purple");
+        break;
+    }
+  };
+
+  const getIngredients = () => {
+    let ingredients = [];
+    let measures = [];
+    for (let i = 1; i < 16; i++) {
+      if (
+        props.drink[`strIngrient${i}`] !== null ||
+        props.drink[`strIngrient${i}`] !== ""
+      ) {
+        ingredients.push(props.drink[`strIngredient${i}`]);
+      }
+      if (
+        props.drink[`strMeasure${i}`] !== null ||
+        props.drink[`strMeasure${i}`] !== ""
+      ) {
+        measures.push(props.drink[`strMeasure${i}`]);
+      }
+    }
+
+    for (let j = 0; j < ingredients.length; j++) {
+      if (!ingredients[j]) {
+        break;
+      } else if (measures[j]) {
+        recipe.push(measures[j] + ingredients[j]);
+      } else {
+        recipe.push(ingredients[j]);
+      }
+    }
+
+    return recipe;
+  };
+
+  getIngredients();
+
+  useEffect(() => {
+    getColors();
+  }, []);
+
+  return (
+    <div className="random-card">
+      <img
+        className="random-drink-img"
+        src={props.drink.strDrinkThumb}
+        alt={props.drink.strDrink}
+      />
+      <h1 className="random-drink-name">{props.drink.strDrink}</h1>
+      <h2 className="drink-info ingrediants-title">Ingredients:</h2>
+      <ul className="drink-info ingrediants-list">
+        {recipe.map((ingredient, idx) => {
+          return <li key={idx}>{ingredient}</li>;
+        })}
+      </ul>
+      <h2 className="drink-info directions-title">Directions:</h2>
+      <p className="drink-info directions">{props.drink.strInstructions}</p>
+    </div>
+  );
+};
 
 export default RandomCard;

@@ -1,88 +1,95 @@
 .categories-menu {
-    display: grid;
-    grid-template-columns: 16.5% 16.5% 16.5% 16.5% 16.5% 16.5%;
-    height: 70vh;
-    padding-top: 15px;
-    padding-left: 60px;
-    padding-right: 60px;
+  display: grid;
+  grid-template-columns: 16.5% 16.5% 16.5% 16.5% 16.5% 16.5%;
+  height: 70vh;
+  padding-top: 15px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
-.cocktails, .prem-cocktails, .party,
-.shots, .homemade-liqueur, .beer {
-    /* height: calc(100vh - 10px); */
-    border: 1px solid #222222;
-    box-sizing: border-box;
-    display: flex;
-    align-items: flex-end;
-    background-size: cover;
-    background-position-y: center;
-    background-position-x: center;
+.cocktails,
+.prem-cocktails,
+.party,
+.shots,
+.homemade-liqueur,
+.beer {
+  border: 1px solid #222222;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: center;
 }
 
 .cocktails {
-    grid-column: 1 / 2;
-    background-image: url('../../images/cocktails_cat.jpg');
+  grid-column: 1 / 2;
+  background-image: url("../../images/cocktails_cat.jpg");
 }
 
 .prem-cocktails {
-    grid-column: 2 / 3;
-    background-image: url('../../images/prem_cat.jpg');
+  grid-column: 2 / 3;
+  background-image: url("../../images/prem_cat.jpg");
 }
 
 .party {
-    grid-column: 3 / 4;
-    background-image: url('../../images/party_cat.jpg');
+  grid-column: 3 / 4;
+  background-image: url("../../images/party_cat.jpg");
 }
 
 .shots {
-    grid-column: 4 / 5;
-    background-image: url('../../images/shots_cat.jpg');
+  grid-column: 4 / 5;
+  background-image: url("../../images/shots_cat.jpg");
 }
 
 .homemade-liqueur {
-    grid-column: 5 / 6;
-    background-image: url('../../images/homemade_cat.jpg');
+  grid-column: 5 / 6;
+  background-image: url("../../images/homemade_cat.jpg");
 }
 
 .beer {
-    grid-column: 6 / 7;
-    background-image: url('../../images/beer_cat.jpg');
+  grid-column: 6 / 7;
+  background-image: url("../../images/beer_cat.jpg");
 }
 
-.cocktails-btn, .prem-cocktails-btn, .party-btn,
-.shots-btn, .homemade-liqueur-btn, .beer-btn {
-    width: 100%;
-    height: 15%;
-    border: none;
-    border-radius: 0;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 1.3em;
-    text-transform: uppercase;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.80);
+.cocktails-btn,
+.prem-cocktails-btn,
+.party-btn,
+.shots-btn,
+.homemade-liqueur-btn,
+.beer-btn {
+  width: 100%;
+  height: 15%;
+  border: none;
+  border-radius: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .cocktails-btn:hover {
-    color: #ff00e1 ;
-} 
+  color: #ff00e1;
+}
 
 .prem-cocktails-btn:hover {
-    color: #00ffe1 ;
-} 
+  color: #00ffe1;
+}
 
 .party-btn:hover {
-    color: #ff6161 ;
-} 
+  color: #ff6161;
+}
 
 .shots-btn:hover {
-    color: #7bff00 ;
-} 
+  color: #7bff00;
+}
 
 .homemade-liqueur-btn:hover {
-    color: #ff7b00 ;
-} 
+  color: #ff7b00;
+}
 
 .beer-btn:hover {
-    color: #ffdd00 ;
-} 
+  color: #ffdd00;
+}
