@@ -6,24 +6,34 @@ const CategoriesMenu = () => {
   return (
     <div className="categories-menu">
       <div className="cocktails">
-        <Link to="/category/:cocktails">
+        <Link to="/category/:cocktails" className="link">
           <button className="cocktails-btn">cocktails</button>
         </Link>
       </div>
       <div className="prem-cocktails">
-        <button className="prem-cocktails-btn">premium cocktails</button>
+        <Link to="/category/:premium-cocktails" className="link">
+          <button className="prem-cocktails-btn">premium cocktails</button>
+        </Link>
       </div>
       <div className="party">
-        <button className="party-btn">party</button>
+        <Link to="/category/:party-drinks" className="link">
+          <button className="party-btn">party</button>
+        </Link>
       </div>
       <div className="shots">
-        <button className="shots-btn">shots</button>
+        <Link to="/category/:shots" className="link">
+          <button className="shots-btn">shots</button>
+        </Link>
       </div>
       <div className="homemade-liqueur">
-        <button className="homemade-liqueur-btn">homemade liqueur</button>
+        <Link to="/category/:homemade-liqueur" className="link">
+          <button className="homemade-liqueur-btn">homemade liqueur</button>
+        </Link>
       </div>
       <div className="beer">
-        <button className="beer-btn">beer</button>
+        <Link to="/category/:beer" className="link">
+          <button className="beer-btn">beer</button>
+        </Link>
       </div>
     </div>
   );

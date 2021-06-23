@@ -52,6 +52,11 @@
   background-image: url("../../images/beer_cat.jpg");
 }
 
+.link {
+  width: 100%;
+  height: 15%;
+}
+
 .cocktails-btn,
 .prem-cocktails-btn,
 .party-btn,
@@ -59,7 +64,7 @@
 .homemade-liqueur-btn,
 .beer-btn {
   width: 100%;
-  height: 15%;
+  height: 100%;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 1.3em;
