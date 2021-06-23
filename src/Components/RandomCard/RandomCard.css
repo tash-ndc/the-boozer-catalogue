@@ -4,11 +4,10 @@
   margin: 0px;
   box-sizing: border-box;
   border-radius: 20px;
-  background-color: #ac209c;
   display: grid;
   align-items: center;
   grid-template-columns: 40% 60%;
-  grid-template-rows: auto auto auto auto auto;
+  grid-template-rows: 20% 10% auto 10% auto;
   gap: 0px;
   text-align: center;
 }
@@ -30,7 +29,7 @@
   font-weight: 500;
   text-transform: uppercase;
   width: 100%;
-  margin: 10px 0px;
+  margin: 7px 10px;
   color: white;
   grid-column: 2 / 3;
 }
@@ -47,7 +46,6 @@
 .ingrediants-title,
 .directions-title {
   font-size: 2em;
-  background-color: #6f1565;
   padding: 3px;
 }
 
@@ -55,9 +53,68 @@
 .directions {
   font-size: 1.3em;
   list-style-type: none;
-  padding: 10px 20px;
+  padding: 5px 20px;
 }
 
 .purple {
-  color: red;
+  background-color: #bf24d3;
+}
+
+.purple .ingrediants-title,
+.purple .directions-title {
+  background-color: #70217a;
+}
+
+.red {
+  background-color: #ff6161;
+}
+
+.red .ingrediants-title,
+.red .directions-title {
+  background-color: #973434;
+}
+
+.blue {
+  background-color: #4ac0b2;
+}
+
+.blue .ingrediants-title,
+.blue .directions-title {
+  background-color: #36746c;
+}
+
+.green {
+  background-color: #5da717;
+}
+
+.green .ingrediants-title,
+.green .directions-title {
+  background-color: #3f7a07;
+}
+
+.pink {
+  background-color: #ff00e1;
+}
+
+.pink .ingrediants-title,
+.pink .directions-title {
+  background-color: #960385;
+}
+
+.orange {
+  background-color: #ff7b00;
+}
+
+.orange .ingrediants-title,
+.orange .directions-title {
+  background-color: #99500d;
+}
+
+.yellow {
+  background-color: #d4b800;
+}
+
+.yellow .ingrediants-title,
+.yellow .directions-title {
+  background-color: #927f05;
 }

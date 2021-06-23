@@ -1,11 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../Categories/CategoriesMenu.css";
 
 const CategoriesMenu = () => {
   return (
     <div className="categories-menu">
       <div className="cocktails">
-        <button className="cocktails-btn">cocktails</button>
+        <Link to="/category/:cocktails">
+          <button className="cocktails-btn">cocktails</button>
+        </Link>
       </div>
       <div className="prem-cocktails">
         <button className="prem-cocktails-btn">premium cocktails</button>

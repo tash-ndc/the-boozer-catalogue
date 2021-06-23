@@ -6,3 +6,11 @@ export const getRandomCocktail = async () => {
 
   return json.drinks[0];
 };
+
+export const getCategoryDrinks = async (category) => {
+  const normalise = category.toLowerCase().replace(/ /g, "_");
+  const response = await fetch(`${ROOT_API}/filter.php?c=${normalise}`);
+  const json = await response.json();
+
+  return json;
+};

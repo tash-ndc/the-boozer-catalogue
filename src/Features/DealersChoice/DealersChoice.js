@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-// import { Link } from "react-router-dom";
 import "../DealersChoice/DealersChoice.css";
 import RandomCard from "../../Components/RandomCard/RandomCard";
 import { getRandomCocktail } from "../../api/cocktail_db";

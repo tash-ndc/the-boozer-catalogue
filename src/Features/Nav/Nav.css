@@ -23,6 +23,7 @@
 .categories-btn:hover,
 .dealers-choice-btn:hover {
   background-color: #1d1c18;
+  cursor: pointer;
 }
 
 .categories-btn {

@@ -5,32 +5,6 @@ const RandomCard = (props) => {
   const [color, setColor] = useState("");
   let recipe = [];
 
-  const getColors = () => {
-    switch (props.drink.strCategory) {
-      case "Ordinary Drink":
-        setColor("pink");
-        break;
-      case "Cocktail":
-        setColor("blue");
-        break;
-      case "Punch / Party Drink":
-        setColor("red");
-        break;
-      case "Shot":
-        setColor("green");
-        break;
-      case "Homemade Liqueur":
-        setColor("orange");
-        break;
-      case "Beer":
-        setColor("yellow");
-        break;
-      default:
-        setColor("purple");
-        break;
-    }
-  };
-
   const getIngredients = () => {
     let ingredients = [];
     let measures = [];
@@ -53,7 +27,7 @@ const RandomCard = (props) => {
       if (!ingredients[j]) {
         break;
       } else if (measures[j]) {
-        recipe.push(measures[j] + ingredients[j]);
+        recipe.push(measures[j] + " " + ingredients[j]);
       } else {
         recipe.push(ingredients[j]);
       }
@@ -65,11 +39,37 @@ const RandomCard = (props) => {
   getIngredients();
 
   useEffect(() => {
+    const getColors = () => {
+      switch (props.drink.strCategory) {
+        case "Ordinary Drink":
+          setColor("pink");
+          break;
+        case "Cocktail":
+          setColor("blue");
+          break;
+        case "Punch / Party Drink":
+          setColor("red");
+          break;
+        case "Shot":
+          setColor("green");
+          break;
+        case "Homemade Liqueur":
+          setColor("orange");
+          break;
+        case "Beer":
+          setColor("yellow");
+          break;
+        default:
+          setColor("purple");
+          break;
+      }
+    };
+
     getColors();
-  }, []);
+  }, [props.drink.strCategory]);
 
   return (
-    <div className="random-card">
+    <div className={[color, "random-card"].join(" ")}>
       <img
         className="random-drink-img"
         src={props.drink.strDrinkThumb}
