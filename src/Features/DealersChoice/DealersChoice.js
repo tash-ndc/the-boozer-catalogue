@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../DealersChoice/DealersChoice.css";
 import RandomCard from "../../Components/RandomCard/RandomCard";
 import { getRandomCocktail } from "../../api/cocktail_db";
+import { HiOutlineRefresh } from "react-icons/hi";
 
 const DealersChoice = () => {
   const [drink, setDrink] = useState([]);
@@ -18,7 +19,7 @@ const DealersChoice = () => {
   return (
     <div className="dealers-choice">
       <button className="shuffle-btn" onClick={getDrink}>
-        shuffle
+        <HiOutlineRefresh />
       </button>
       <RandomCard className="card" drink={drink} />
     </div>

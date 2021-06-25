@@ -75,15 +75,17 @@ const RandomCard = (props) => {
         src={props.drink.strDrinkThumb}
         alt={props.drink.strDrink}
       />
-      <h1 className="random-drink-name">{props.drink.strDrink}</h1>
-      <h2 className="drink-info ingrediants-title">Ingredients:</h2>
-      <ul className="drink-info ingrediants-list">
-        {recipe.map((ingredient, idx) => {
-          return <li key={idx}>{ingredient}</li>;
-        })}
-      </ul>
-      <h2 className="drink-info directions-title">Directions:</h2>
-      <p className="drink-info directions">{props.drink.strInstructions}</p>
+      <div className="drink-details">
+        <h1 className="random-drink-name">{props.drink.strDrink}</h1>
+        <h2 className="drink-info ingredients-title">Ingredients:</h2>
+        <ul className="drink-info ingredients-list">
+          {recipe.map((ingredient, idx) => {
+            return <li key={idx}>{ingredient}</li>;
+          })}
+        </ul>
+        <h2 className="drink-info directions-title">Directions:</h2>
+        <p className="drink-info directions">{props.drink.strInstructions}</p>
+      </div>
     </div>
   );
 };
