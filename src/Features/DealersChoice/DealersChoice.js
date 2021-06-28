@@ -21,7 +21,7 @@ const DealersChoice = () => {
       <button className="shuffle-btn" onClick={getDrink}>
         <HiOutlineRefresh />
       </button>
-      <RandomCard className="card" drink={drink} />
+      <RandomCard drink={drink} />
     </div>
   );
 };
