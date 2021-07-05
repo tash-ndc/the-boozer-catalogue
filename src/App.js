@@ -14,8 +14,8 @@ function App() {
         <Header className="header" />
         <Switch>
           <Route path="/" exact component={CategoriesMenu} />
-          <Route path="/category/:category" component={CategoryDetail} />
-          <Route path="/categories" component={CategoriesMenu} />
+          <Route path="/categories" exact component={CategoriesMenu} />
+          <Route path="/categories/:category" component={CategoryDetail} />
           <Route path="/dealers-choice" component={DealersChoice} />
           {/* <Route path='/:search' component={SearchResults} /> */}
         </Switch>

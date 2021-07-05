@@ -5,56 +5,50 @@ import DrinkCard from "../../Components/DrinkCard/DrinkCard";
 
 const CategoryDetail = ({ match }) => {
   const [drinks, setDrinks] = useState([]);
-  const [apiCategory, setApiCategory] = useState("");
-  const menuCategory = match.params.category;
-
-  const getDrinks = async (category) => {
-    const drinks = await getCategoryDrinks(category);
-    setDrinks(drinks);
-  };
+  const [endpoint, setEndpoint] = useState("");
 
   useEffect(() => {
-    const getCategory = () => {
-      switch (menuCategory) {
-        case "cocktails": {
-          setApiCategory("Ordinary_Drink");
+    const getDrinks = async () => {
+      const data = await getCategoryDrinks(endpoint);
+      setDrinks(data);
+    };
+
+    const getEndpoint = () => {
+      switch (match.params.category) {
+        case "cocktails":
+          setEndpoint("Ordinary_Drink");
           break;
-        }
-        case "premium-cocktails": {
-          setApiCategory("Cocktail");
+        case "premium-cocktails":
+          setEndpoint("Cocktail");
           break;
-        }
-        case "shots": {
-          setApiCategory("Shot");
+        case "party-drinks":
+          setEndpoint("Punch_/_Party_Drink");
           break;
-        }
-        case "party-drinks": {
-          setApiCategory("Punch_/_Party_Drink");
+        case "shots":
+          setEndpoint("Shot");
           break;
-        }
-        case "homemade-liqueur": {
-          setApiCategory("Homemade_Liqueur");
+        case "homemade-liqueur":
+          setEndpoint("Homemade_Liqueur");
           break;
-        }
-        case "beer": {
-          setApiCategory("Beer");
+        case "beer":
+          setEndpoint("Beer");
           break;
-        }
-        default: {
-          setApiCategory("Other/Unknown");
+        default:
+          setEndpoint("Other/Unknown");
           break;
-        }
       }
     };
 
-    getCategory();
-    getDrinks(apiCategory);
-  }, [menuCategory, apiCategory]);
+    getEndpoint();
+    getDrinks();
+  }, [endpoint, match.params.category]);
+
+  // console.log(drinks);
 
   return (
     <div className="category-detail">
       <h1>feck</h1>
-      {/* <DrinkCard drinks={drinks} /> */}
+      <DrinkCard category={match.params.category} drinks={drinks} />
     </div>
   );
 };
