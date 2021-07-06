@@ -1,0 +1,50 @@
+.category-detail {
+  margin: 0 auto;
+  max-width: 100vw;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.title {
+  width: 100%;
+  margin: 0px;
+  margin-bottom: 10px;
+  padding: 3px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3em;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.Ordinary_Drink {
+  color: #ff00e1;
+}
+
+.Cocktail {
+  color: #00ffe1;
+}
+
+.Punch_\/_Party_Drink {
+  color: #ff6161;
+}
+
+.Shot {
+  color: #7bff00;
+}
+
+.Homemade_Liqueur {
+  color: #ff7b00;
+}
+
+.Beer {
+  color: #ffdd00;
+}
+
+.Other\/Unknown {
+  color: #bf24d3;
+}

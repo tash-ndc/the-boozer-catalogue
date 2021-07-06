@@ -13,3 +13,10 @@ export const getCategoryDrinks = async (category) => {
 
   return json.drinks;
 };
+
+export const getDrinkInfo = async (drinkId) => {
+  const response = await fetch(`${ROOT_API}/lookup.php?i=${drinkId}`);
+  const json = await response.json();
+
+  return json.drinks[0];
+};

@@ -6,6 +6,7 @@ import DrinkCard from "../../Components/DrinkCard/DrinkCard";
 const CategoryDetail = ({ match }) => {
   const [drinks, setDrinks] = useState([]);
   const [endpoint, setEndpoint] = useState("");
+  const [title, setTitle] = useState("");
 
   useEffect(() => {
     const getDrinks = async () => {
@@ -17,24 +18,31 @@ const CategoryDetail = ({ match }) => {
       switch (match.params.category) {
         case "cocktails":
           setEndpoint("Ordinary_Drink");
+          setTitle("Cocktails");
           break;
         case "premium-cocktails":
           setEndpoint("Cocktail");
+          setTitle("Premium Cocktails");
           break;
         case "party-drinks":
           setEndpoint("Punch_/_Party_Drink");
+          setTitle("Party");
           break;
         case "shots":
           setEndpoint("Shot");
+          setTitle("Shots");
           break;
         case "homemade-liqueur":
           setEndpoint("Homemade_Liqueur");
+          setTitle("Homemade Liqueur");
           break;
         case "beer":
           setEndpoint("Beer");
+          setTitle("Beer");
           break;
         default:
           setEndpoint("Other/Unknown");
+          setTitle("Miscellaneous");
           break;
       }
     };
@@ -47,8 +55,16 @@ const CategoryDetail = ({ match }) => {
 
   return (
     <div className="category-detail">
-      <h1>feck</h1>
-      <DrinkCard category={match.params.category} drinks={drinks} />
+      <h1 className={[endpoint, "title"].join(" ")}>{title}</h1>
+      {drinks.map((drink) => (
+        <DrinkCard
+          category={match.params.category}
+          key={drink.idDrink}
+          drinkId={drink.idDrink}
+          drinkName={drink.strDrink}
+          drinkImg={drink.strDrinkThumb}
+        />
+      ))}
     </div>
   );
 };
