@@ -9,11 +9,20 @@ const DrinkCard = (props) => {
   const [color, setColor] = useState("");
   const [drink, setDrink] = useState([]);
   const [visible, setVisible] = useState(false);
+  const [fading, setFading] = useState(false);
   let recipe = [];
 
   const handleClick = async () => {
     const drink = await getDrinkInfo(props.drinkId);
     setDrink(drink);
+
+    if (!visible) {
+      setFading(false);
+      setVisible(true);
+    } else if (visible) {
+      setFading(true);
+      setTimeout(() => setVisible(false), 100);
+    }
   };
 
   const getIngredients = () => {
@@ -83,9 +92,13 @@ const DrinkCard = (props) => {
         {props?.drinkName ?? <ReactLoading type="spin" color="#fff" />}
       </h1>
       <Animated
-        // animationIn="slideInDown"
-        // animationOut="slideOutUp"
-        isVisible={visible}
+        animationIn="fadeIn"
+        animationOut="fadeOut"
+        animationInDuration={100}
+        animationOutDuration={100}
+        isVisible={!fading}
+        style={visible ? null : { display: "none" }}
+        className="info-animation"
       >
         <div className="selected-drink-details">
           <h2 className="ingredients-heading">Ingredients:</h2>
