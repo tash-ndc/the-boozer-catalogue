@@ -58,6 +58,7 @@ const CategoryDetail = ({ match }) => {
       <h1 className={[endpoint, "title"].join(" ")}>{title}</h1>
       {drinks.map((drink) => (
         <DrinkCard
+          className="drink-card"
           category={match.params.category}
           key={drink.idDrink}
           drinkId={drink.idDrink}

@@ -59,6 +59,8 @@
   list-style-type: none;
 }
 
+/* cocktails */
+
 .pink .drink-details {
   border: 2.5px solid #ff00e1;
 }
@@ -68,6 +70,8 @@
 .pink .directions-title {
   color: #ff00e1;
 }
+
+/* premium cocktails */
 
 .blue .drink-details {
   border: 2.5px solid #00ffe1;
@@ -79,6 +83,8 @@
   color: #00ffe1;
 }
 
+/* party drinks */
+
 .red .drink-details {
   border: 2.5px solid #ff6161;
 }
@@ -88,6 +94,8 @@
 .red .directions-title {
   color: #ff6161;
 }
+
+/* shots */
 
 .green .drink-details {
   border: 2.5px solid #7bff00;
@@ -99,6 +107,8 @@
   color: #7bff00;
 }
 
+/* homemade liqueur */
+
 .orange .drink-details {
   border: 2.5px solid #ff7b00;
 }
@@ -109,6 +119,8 @@
   color: #ff7b00;
 }
 
+/* beer */
+
 .yellow .drink-details {
   border: 2.5px solid #ffdd00;
 }
@@ -118,6 +130,8 @@
 .yellow .directions-title {
   color: #ffdd00;
 }
+
+/* other / unknown */
 
 .purple .drink-details {
   border: 2.5px solid #bf24d3;

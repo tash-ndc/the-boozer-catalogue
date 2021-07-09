@@ -3,80 +3,81 @@
   height: auto;
   box-sizing: border-box;
   margin: 10px;
-  border-radius: 15px;
-  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 200px 50px auto auto;
+  justify-items: center;
 }
 
 .drink-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  border: 1px solid #292824;
   grid-row: 1 / 1;
-  border: 1px solid green;
 }
 
 .drink-name {
-  width: auto;
-  height: auto;
+  width: 100%;
   font-family: "Montserrat", sans-serif;
-  font-size: 1.2em;
+  font-size: 1.3em;
   font-weight: 500;
   text-align: center;
   text-transform: uppercase;
   align-self: center;
-  color: white;
+  justify-self: center;
   grid-row: 2 / 2;
-  border: 1px solid red;
 }
 
 .button {
+  width: 100%;
+  margin-top: 5px;
+  padding-top: 3px;
   justify-self: center;
   align-self: end;
   color: white;
   grid-row: 4 / 4;
-  background: none;
+  background-color: #292824;
   border: none;
-  border: 1px solid blue;
 }
 
 .button:hover {
   border: none;
-  color: black;
   cursor: pointer;
-  border: 1px solid blue;
 }
 
 .selected-drink-details {
-  width: auto;
+  width: 100%;
   max-height: 100%;
-  padding-left: 2px;
-  padding-right: 2px;
   justify-self: center;
   align-self: center;
   grid-row: 3 / 3;
-  border: 1px solid yellow;
+  z-index: 0;
 }
 
 .ingredients-heading,
 .ingredients,
 .instructions-heading,
 .instructions {
+  width: 100%;
   font-family: "Inter", sans-serif;
-  font-size: 0.9em;
   text-align: center;
-  color: white;
-  font-weight: 100;
 }
 
 .ingredients-heading,
 .instructions-heading {
-  text-decoration: underline;
+  font-size: 1.2em;
   font-weight: 200;
+  padding: 1px;
+  background-color: #292824;
+}
+
+.ingredients,
+.instructions {
+  font-size: 0.9em;
+  color: white;
+  font-weight: 100;
 }
 
 .ingredients {
@@ -87,4 +88,95 @@
 
 .instructions {
   line-height: 1.5em;
+}
+
+/* cocktails */
+
+.pink-card {
+  border: 3px solid #ff00e1;
+}
+
+.pink-card .drink-name,
+.pink-card .ingredients-heading,
+.pink-card .instructions-heading,
+.pink-card .button:hover {
+  color: #ff00e1;
+}
+
+/* premium cocktails */
+
+.blue-card {
+  border: 3px solid #00ffe1;
+}
+
+.blue-card .drink-name,
+.blue-card .ingredients-heading,
+.blue-card .instructions-heading,
+.blue-card .button:hover {
+  color: #00ffe1;
+}
+
+/* party drinks */
+
+.red-card {
+  border: 3px solid #ff6161;
+}
+
+.red-card .drink-name,
+.red-card .ingredients-heading,
+.red-card .instructions-heading,
+.red-card .button:hover {
+  color: #ff6161;
+}
+
+/* shots */
+
+.green-card {
+  border: 3px solid #7bff00;
+}
+
+.green-card .drink-name,
+.green-card .ingredients-heading,
+.green-card .instructions-heading,
+.green-card .button:hover {
+  color: #7bff00;
+}
+
+/* homemade liqueur */
+
+.orange-card {
+  border: 3px solid #ff7b00;
+}
+
+.orange-card .drink-name,
+.orange-card .ingredients-heading,
+.orange-card .instructions-heading,
+.orange-card .button:hover {
+  color: #ff7b00;
+}
+
+/* beer */
+
+.yellow-card {
+  border: 3px solid #ffdd00;
+}
+
+.yellow-card .drink-name,
+.yellow-card .ingredients-heading,
+.yellow-card .instructions-heading,
+.yellow-card .button:hover {
+  color: #ffdd00;
+}
+
+/* other / unknown */
+
+.purple-card {
+  border: 3px solid #bf24d3;
+}
+
+.purple-card .drink-name,
+.purple-card .ingredients-heading,
+.purple-card .instructions-heading,
+.purple-card .button:hover {
+  color: #bf24d3;
 }

@@ -3,6 +3,7 @@
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: auto auto;
+  z-index: 100;
 }
 
 .banner {

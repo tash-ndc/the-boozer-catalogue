@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../DrinkCard/DrinkCard.css";
 import { getDrinkInfo } from "../../api/cocktail_db";
-import { FaChevronDown } from "react-icons/fa";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import ReactLoading from "react-loading";
 import { Animated } from "react-animated-css";
 
@@ -59,25 +59,25 @@ const DrinkCard = (props) => {
     const getColors = () => {
       switch (props.category) {
         case "cocktails":
-          setColor("pink");
+          setColor("pink-card");
           break;
         case "premium-cocktails":
-          setColor("blue");
+          setColor("blue-card");
           break;
         case "party-drinks":
-          setColor("red");
+          setColor("red-card");
           break;
         case "shots":
-          setColor("green");
+          setColor("green-card");
           break;
-        case "homeade-liqueur":
-          setColor("orange");
+        case "homemade-liqueur":
+          setColor("orange-card");
           break;
         case "beer":
-          setColor("yellow");
+          setColor("yellow-card");
           break;
         default:
-          setColor("purple");
+          setColor("purple-card");
           break;
       }
     };
@@ -112,7 +112,11 @@ const DrinkCard = (props) => {
         </div>
       </Animated>
       <button className="button" onClick={handleClick}>
-        <FaChevronDown className="expand-arrow" />
+        {visible ? (
+          <FaChevronUp className="expand-arrow" />
+        ) : (
+          <FaChevronDown className="collapse-arrow" />
+        )}
       </button>
     </div>
   );
