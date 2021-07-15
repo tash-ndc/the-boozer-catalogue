@@ -1,9 +1,5 @@
 .category-detail {
   max-width: 100vw;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  align-content: space-evenly;
 }
 
 .title {
@@ -18,6 +14,13 @@
   text-transform: uppercase;
   color: white;
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.drink-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-evenly;
 }
 
 .drink-card {

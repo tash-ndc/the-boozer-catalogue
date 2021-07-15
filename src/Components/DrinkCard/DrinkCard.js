@@ -58,21 +58,27 @@ const DrinkCard = (props) => {
   useEffect(() => {
     const getColors = () => {
       switch (props.category) {
+        case "Ordinary Drink":
         case "cocktails":
           setColor("pink-card");
           break;
+        case "Cocktail":
         case "premium-cocktails":
           setColor("blue-card");
           break;
+        case "Punch / Party Drink":
         case "party-drinks":
           setColor("red-card");
           break;
+        case "Shot":
         case "shots":
           setColor("green-card");
           break;
+        case "Homemade Liqueur":
         case "homemade-liqueur":
           setColor("orange-card");
           break;
+        case "Beer":
         case "beer":
           setColor("yellow-card");
           break;

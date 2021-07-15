@@ -56,16 +56,18 @@ const CategoryDetail = ({ match }) => {
   return (
     <div className="category-detail">
       <h1 className={[endpoint, "title"].join(" ")}>{title}</h1>
-      {drinks.map((drink) => (
-        <DrinkCard
-          className="drink-card"
-          category={match.params.category}
-          key={drink.idDrink}
-          drinkId={drink.idDrink}
-          drinkName={drink.strDrink}
-          drinkImg={drink.strDrinkThumb}
-        />
-      ))}
+      <div className="drink-list">
+        {drinks.map((drink) => (
+          <DrinkCard
+            className="drink-card"
+            category={match.params.category}
+            key={drink.idDrink}
+            drinkId={drink.idDrink}
+            drinkName={drink.strDrink}
+            drinkImg={drink.strDrinkThumb}
+          />
+        ))}
+      </div>
     </div>
   );
 };

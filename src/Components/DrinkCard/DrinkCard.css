@@ -7,7 +7,8 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 200px 50px auto auto;
-  justify-items: center;
+  justify-content: center;
+  align-content: center;
 }
 
 .drink-img {
@@ -49,24 +50,27 @@
 
 .selected-drink-details {
   width: 100%;
-  max-height: 100%;
-  justify-self: center;
-  align-self: center;
   grid-row: 3 / 3;
   z-index: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 25px auto 25px auto;
+  justify-items: center;
+  align-items: center;
 }
 
 .ingredients-heading,
 .ingredients,
 .instructions-heading,
 .instructions {
-  width: 100%;
   font-family: "Inter", sans-serif;
   text-align: center;
 }
 
 .ingredients-heading,
 .instructions-heading {
+  width: 100%;
+  height: 100%;
   font-size: 1.2em;
   font-weight: 200;
   padding: 1px;
@@ -76,18 +80,28 @@
 .ingredients,
 .instructions {
   font-size: 0.9em;
-  color: white;
   font-weight: 100;
+  line-height: 1.5em;
+  color: white;
+}
+
+.ingredients-heading {
+  grid-row: 1 / 1;
 }
 
 .ingredients {
   list-style-type: circle;
   text-align: left;
-  line-height: 1.5em;
+  justify-self: center;
+  grid-row: 2/2;
+}
+
+.instructions-heading {
+  grid-row: 3/3;
 }
 
 .instructions {
-  line-height: 1.5em;
+  grid-row: 4/4;
 }
 
 /* cocktails */

@@ -20,3 +20,10 @@ export const getDrinkInfo = async (drinkId) => {
 
   return json.drinks[0];
 };
+
+export const getSearchResults = async (search) => {
+  const response = await fetch(`${ROOT_API}/search.php?s=${search}`);
+  const json = response.json();
+
+  return json;
+};
