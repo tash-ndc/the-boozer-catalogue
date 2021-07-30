@@ -14,7 +14,7 @@
   height: 100%;
   font-family: "Montserrat", sans-serif;
   font-weight: light;
-  font-size: 30px;
+  font-size: 2em;
   text-transform: uppercase;
   color: white;
   border: 1px solid #31302b;
@@ -53,7 +53,7 @@
 
 .search-input {
   width: 80%;
-  height: 25px;
+  height: 1.5em;
   background-color: rgba(235, 235, 235, 0.85);
   border: none;
   border-radius: 0.4em;
@@ -68,7 +68,7 @@
 }
 
 .search-button {
-  height: 23px;
+  height: 1.4em;
   font-size: 1.5em;
   color: rgba(235, 235, 235, 0.85);
   margin: 5px;
@@ -78,4 +78,75 @@
 .search-button:hover {
   color: #292824;
   cursor: pointer;
+}
+
+/* desktop */
+
+@media only screen and (min-width: 1600px) {
+  .categories-btn,
+  .dealers-choice-btn {
+    font-size: 2.2em;
+  }
+}
+
+/* tablet landscape */
+
+@media only screen and (max-width: 1024px) {
+  .categories-btn,
+  .dealers-choice-btn {
+    font-size: 1.6em;
+  }
+}
+
+/* tablet portrait */
+
+@media only screen and (max-width: 768px) {
+  .categories-btn,
+  .dealers-choice-btn {
+    font-size: 1.5em;
+  }
+}
+
+/* mobile */
+
+@media only screen and (max-width: 480px) {
+  .navbar {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 1.3em;
+  }
+
+  .categories-btn {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+  }
+
+  .dealers-choice-btn {
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+  }
+
+  .search-area {
+    grid-column: 1 / 3;
+    grid-row: 2 / 2;
+  }
+
+  .search-input {
+    border-radius: 0.3em;
+    height: 1em;
+    font-size: 0.9em;
+  }
+
+  .search-button {
+    height: 0.8em;
+    margin: 3px;
+    margin-top: 7px;
+  }
+
+  .categories-btn,
+  .dealers-choice-btn {
+    font-size: 0.9em;
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
 }

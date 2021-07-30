@@ -3,7 +3,7 @@
   display: grid;
   align-items: center;
   justify-items: center;
-  grid-template-columns: 25% 75%;
+  grid-template-columns: 35% 65%;
   grid-column-gap: 10px;
 }
 
@@ -54,7 +54,7 @@
 
 .ingredients-list,
 .directions {
-  font-size: 1.2em;
+  font-size: 1.3em;
   font-weight: 100;
   list-style-type: none;
 }
@@ -141,4 +141,92 @@
 .purple .ingredients-title,
 .purple .directions-title {
   color: #bf24d3;
+}
+
+/* desktop */
+
+@media only screen and (min-width: 1600px) {
+  .random-drink-name {
+    font-size: 3em;
+  }
+
+  .ingredients-title,
+  .directions-title {
+    font-size: 2em;
+  }
+
+  .ingredients-list,
+  .directions {
+    font-size: 1.4em;
+  }
+}
+
+/* tablet landscape */
+
+@media only screen and (max-width: 1024px) {
+  .random-card {
+    grid-gap: 7px;
+  }
+
+  .random-drink-name {
+    font-size: 2em;
+  }
+}
+
+/* tablet portrait */
+
+@media only screen and (max-width: 768px) {
+  .random-card {
+    grid-gap: 5px;
+  }
+
+  .drink-details {
+    grid-template-rows: 20% 7% auto 7% auto;
+  }
+
+  .random-drink-name {
+    font-size: 1.6em;
+  }
+
+  .ingredients-title,
+  .directions-title {
+    font-size: 1.1em;
+  }
+
+  .ingredients-list,
+  .directions {
+    font-size: 1em;
+  }
+}
+
+/* mobile */
+
+@media only screen and (max-width: 480px) {
+  .random-card {
+    grid-template-columns: 40% 60%;
+    grid-gap: 2px;
+  }
+
+  .drink-details {
+    grid-template-rows: 17% 5% auto 5% auto;
+  }
+
+  .random-drink-name {
+    font-size: 1.3em;
+  }
+
+  .ingredients-title,
+  .directions-title {
+    font-size: 1em;
+  }
+
+  .ingredients-list,
+  .directions {
+    font-size: 0.8em;
+  }
+
+  .ingredients-list {
+    list-style-type: circle;
+    text-align: left;
+  }
 }

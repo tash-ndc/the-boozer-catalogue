@@ -17,11 +17,55 @@
   width: 16%;
   margin-top: 5px;
   margin-bottom: 5px;
-  margin-right: 60px;
+  margin-right: 4em;
   position: relative;
   float: right;
 }
 
 .nav {
   grid-row: 2 / 3;
+}
+
+/* desktop */
+
+@media only screen and (min-width: 1600px) {
+  .logo {
+    width: 17%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 2.5em;
+  }
+}
+
+/* tablet landscape */
+
+@media only screen and (max-width: 1024px) {
+  .logo {
+    width: 17%;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-right: 1.5em;
+  }
+}
+
+/* tablet portrait */
+
+@media only screen and (max-width: 768px) {
+  .logo {
+    width: 18%;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-right: 1em;
+  }
+}
+
+/* mobile */
+
+@media only screen and (max-width: 480px) {
+  .logo {
+    width: 17%;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-right: 0.9em;
+  }
 }
