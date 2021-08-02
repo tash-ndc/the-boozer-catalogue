@@ -134,12 +134,12 @@
   .search-input {
     border-radius: 0.3em;
     height: 1em;
-    font-size: 0.9em;
+    font-size: 0.7em;
   }
 
   .search-button {
-    height: 0.8em;
-    margin: 3px;
+    height: 0.6em;
+    margin: 1.5px;
     margin-top: 7px;
   }
 

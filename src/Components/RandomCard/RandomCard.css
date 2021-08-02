@@ -208,21 +208,21 @@
   }
 
   .drink-details {
-    grid-template-rows: 17% 5% auto 5% auto;
+    grid-template-rows: auto 3% auto 3% auto;
   }
 
   .random-drink-name {
-    font-size: 1.3em;
+    font-size: 1em;
   }
 
   .ingredients-title,
   .directions-title {
-    font-size: 1em;
+    font-size: 0.7em;
   }
 
   .ingredients-list,
   .directions {
-    font-size: 0.8em;
+    font-size: 0.6em;
   }
 
   .ingredients-list {

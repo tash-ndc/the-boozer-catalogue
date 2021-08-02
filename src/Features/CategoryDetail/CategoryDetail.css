@@ -54,3 +54,12 @@
 .Other\/Unknown {
   color: #bf24d3;
 }
+
+/* mobile */
+@media only screen and (max-width: 428px) {
+  .title {
+    margin-top: 10%;
+    margin-bottom: 0px;
+    font-size: 0.7em;
+  }
+}

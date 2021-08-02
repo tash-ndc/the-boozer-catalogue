@@ -194,3 +194,36 @@
 .purple-card .button:hover {
   color: #bf24d3;
 }
+/* mobile */
+
+@media only screen and (max-width: 428px) {
+  .drink-card {
+    width: 45%;
+    min-height: 40vh;
+    margin: 5px;
+    grid-template-rows: auto auto auto auto;
+  }
+
+  .drink-name {
+    font-size: 0.8em;
+  }
+
+  .selected-drink-details {
+    grid-template-rows: 15px auto 15px auto;
+  }
+
+  .ingredients-heading,
+  .instructions-heading {
+    font-size: 0.7em;
+  }
+
+  .ingredients,
+  .instructions {
+    font-size: 0.6em;
+    line-height: 1.1em;
+  }
+
+  .button {
+    font-size: 0.5em;
+  }
+}

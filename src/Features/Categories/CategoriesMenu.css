@@ -71,6 +71,7 @@
   border: none;
   border-radius: 0;
   background-color: rgba(0, 0, 0, 0.8);
+  margin: 0px;
 }
 
 .cocktails-btn:hover {
@@ -153,7 +154,8 @@
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 50% 50%;
     height: 80vh;
-    padding-top: 10%;
+    padding-top: 13%;
+    row-gap: 1px;
   }
 
   .cocktails {
@@ -192,6 +194,10 @@
   .shots-btn,
   .homemade-liqueur-btn,
   .beer-btn {
-    font-size: 0.8em;
+    font-size: 0.6em;
+  }
+
+  .link {
+    height: 18%;
   }
 }

@@ -12,3 +12,11 @@
 .result-card {
   align-self: flex-start;
 }
+
+/* mobile */
+
+@media only screen and (max-width: 428px) {
+  .results-list {
+    margin-top: 10%;
+  }
+}
