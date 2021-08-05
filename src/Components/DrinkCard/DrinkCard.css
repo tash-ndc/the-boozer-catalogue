@@ -64,7 +64,7 @@
 .instructions-heading,
 .instructions {
   font-family: "Inter", sans-serif;
-  text-align: center;
+  text-align: left;
 }
 
 .ingredients-heading,
@@ -73,7 +73,7 @@
   height: 100%;
   font-size: 1.2em;
   font-weight: 200;
-  padding: 1px;
+  padding: 1px 1px 1px 5px;
   background-color: #292824;
 }
 
@@ -81,8 +81,9 @@
 .instructions {
   font-size: 0.9em;
   font-weight: 100;
-  line-height: 1.5em;
+  line-height: 1.2em;
   color: white;
+  padding-left: 3px;
 }
 
 .ingredients-heading {
@@ -91,8 +92,7 @@
 
 .ingredients {
   list-style-type: circle;
-  text-align: left;
-  justify-self: center;
+  list-style-position: inside;
   grid-row: 2/2;
 }
 
@@ -194,6 +194,22 @@
 .purple-card .button:hover {
   color: #bf24d3;
 }
+
+/* tablet portrait */
+
+@media only screen and (max-width: 768px) {
+  .drink-card {
+    width: 30%;
+    min-height: 31vh;
+    margin: 5px;
+    grid-template-rows: auto auto auto auto;
+  }
+
+  .drink-name {
+    font-size: 1em;
+  }
+}
+
 /* mobile */
 
 @media only screen and (max-width: 428px) {
@@ -221,6 +237,7 @@
   .instructions {
     font-size: 0.6em;
     line-height: 1.1em;
+    padding-left: 3px;
   }
 
   .button {
