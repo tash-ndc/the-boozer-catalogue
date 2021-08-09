@@ -56,6 +56,7 @@
 }
 
 /* mobile */
+
 @media only screen and (max-width: 428px) {
   .title {
     margin-top: 10%;

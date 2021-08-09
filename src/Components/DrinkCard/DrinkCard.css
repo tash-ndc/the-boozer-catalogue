@@ -195,6 +195,21 @@
   color: #bf24d3;
 }
 
+/* tablet landscape */
+
+@media only screen and (max-width: 1024px) {
+  .drink-card {
+    width: 23%;
+    min-height: 44vh;
+    margin: 5px;
+    grid-template-rows: auto auto auto auto;
+  }
+
+  .drink-name {
+    font-size: 1.1em;
+  }
+}
+
 /* tablet portrait */
 
 @media only screen and (max-width: 768px) {
@@ -210,7 +225,7 @@
   }
 }
 
-/* mobile */
+/* mobile large */
 
 @media only screen and (max-width: 428px) {
   .drink-card {
@@ -242,5 +257,20 @@
 
   .button {
     font-size: 0.5em;
+  }
+}
+
+/* mobile small */
+
+@media only screen and (max-width: 320px) {
+  .drink-card {
+    width: 45%;
+    min-height: 31vh;
+    margin: 5px;
+    grid-template-rows: auto auto auto auto;
+  }
+
+  .drink-name {
+    font-size: 0.6em;
   }
 }

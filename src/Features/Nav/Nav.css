@@ -96,6 +96,10 @@
   .dealers-choice-btn {
     font-size: 1.6em;
   }
+
+  .searchbar {
+    width: 90%;
+  }
 }
 
 /* tablet portrait */
