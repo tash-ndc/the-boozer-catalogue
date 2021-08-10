@@ -26,25 +26,16 @@
   grid-row: 2 / 3;
 }
 
-/* desktop */
+/*******************************************/
 
-@media only screen and (min-width: 1600px) {
-  .logo {
-    width: 17%;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-right: 2.5em;
-  }
-}
+/* mobile */
 
-/* tablet landscape */
-
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 480px) {
   .logo {
     width: 17%;
     margin-top: 3px;
     margin-bottom: 3px;
-    margin-right: 1.5em;
+    margin-right: 0.7em;
   }
 }
 
@@ -59,13 +50,24 @@
   }
 }
 
-/* mobile */
+/* tablet landscape */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1024px) {
   .logo {
     width: 17%;
     margin-top: 3px;
     margin-bottom: 3px;
-    margin-right: 0.7em;
+    margin-right: 1.5em;
+  }
+}
+
+/* desktop */
+
+@media only screen and (min-width: 1600px) {
+  .logo {
+    width: 17%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 2.5em;
   }
 }
