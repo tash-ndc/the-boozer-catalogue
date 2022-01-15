@@ -104,60 +104,29 @@
   cursor: pointer;
 }
 
-/*******************************************/
+/* desktop */
 
-/* mobile */
-
-@media only screen and (max-width: 480px) {
-  .categories-menu {
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 50% 50%;
-    height: 80vh;
-    padding-top: 13%;
-    row-gap: 1px;
-  }
-
-  .cocktails {
-    grid-column: 1 / 1;
-    grid-row: 1 / 1;
-  }
-
-  .prem-cocktails {
-    grid-column: 2 / 2;
-    grid-row: 1 / 1;
-  }
-
-  .party {
-    grid-column: 3 / 3;
-    grid-row: 1 / 1;
-  }
-
-  .shots {
-    grid-column: 1 / 1;
-    grid-row: 2 / 2;
-  }
-
-  .homemade-liqueur {
-    grid-column: 2 / 2;
-    grid-row: 2 / 2;
-  }
-
-  .beer {
-    grid-column: 3 / 3;
-    grid-row: 2 / 2;
-  }
-
+@media only screen and (min-width: 1600px) {
   .cocktails-btn,
   .prem-cocktails-btn,
   .party-btn,
   .shots-btn,
   .homemade-liqueur-btn,
   .beer-btn {
-    font-size: 0.6em;
+    font-size: 1.5em;
   }
+}
 
-  .link {
-    height: 18%;
+/* tablet landscape */
+
+@media only screen and (max-width: 1024px) {
+  .cocktails-btn,
+  .prem-cocktails-btn,
+  .party-btn,
+  .shots-btn,
+  .homemade-liqueur-btn,
+  .beer-btn {
+    font-size: 1.1em;
   }
 }
 
@@ -215,28 +184,57 @@
   }
 }
 
-/* tablet landscape */
+/* mobile */
 
-@media only screen and (max-width: 1024px) {
-  .cocktails-btn,
-  .prem-cocktails-btn,
-  .party-btn,
-  .shots-btn,
-  .homemade-liqueur-btn,
-  .beer-btn {
-    font-size: 1.1em;
+@media only screen and (max-width: 480px) {
+  .categories-menu {
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
+    height: 80vh;
+    padding-top: 13%;
+    row-gap: 1px;
   }
-}
 
-/* desktop */
+  .cocktails {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+  }
 
-@media only screen and (min-width: 1600px) {
+  .prem-cocktails {
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+  }
+
+  .party {
+    grid-column: 3 / 3;
+    grid-row: 1 / 1;
+  }
+
+  .shots {
+    grid-column: 1 / 1;
+    grid-row: 2 / 2;
+  }
+
+  .homemade-liqueur {
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+  }
+
+  .beer {
+    grid-column: 3 / 3;
+    grid-row: 2 / 2;
+  }
+
   .cocktails-btn,
   .prem-cocktails-btn,
   .party-btn,
   .shots-btn,
   .homemade-liqueur-btn,
   .beer-btn {
-    font-size: 1.5em;
+    font-size: 0.6em;
+  }
+
+  .link {
+    height: 18%;
   }
 }
