@@ -1,14 +1,23 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import "../Nav/Nav.css";
 import { FiSearch } from "react-icons/fi";
 
 const Nav = () => {
   const [search, setSearch] = useState("");
+  let history = useHistory();
 
   const handleChange = (search) => {
     setSearch(search.target.value);
+    console.log(search);
   };
+
+  const enter = () => {
+    history.push(`/${search}`);
+  };
+
+  console.log(search);
+
   return (
     <div className="navbar">
       <Link to="/categories">
@@ -18,7 +27,7 @@ const Nav = () => {
         <button className="dealers-choice-btn">dealer's choice</button>
       </Link>
       <div className="search-area">
-        <form className="searchbar">
+        <form className="searchbar" onSubmit={enter}>
           <input
             className="search-input"
             type="text"

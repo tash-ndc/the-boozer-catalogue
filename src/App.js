@@ -5,6 +5,7 @@ import CategoriesMenu from "./Features/Categories/CategoriesMenu";
 import CategoryDetail from "./Features/CategoryDetail/CategoryDetail";
 import DealersChoice from "./Features/DealersChoice/DealersChoice";
 import SearchResults from "./Features/SearchResults/SearchResults";
+import NoResults from "./Features/NoResults/NoResults";
 import "./App.css";
 
 function App() {

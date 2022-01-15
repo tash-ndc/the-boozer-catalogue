@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../SearchResults/SearchResults.css";
 import { getSearchResults } from "../../api/cocktail_db";
 import DrinkCard from "../../Components/DrinkCard/DrinkCard";
+import NoResults from "../../Features/NoResults/NoResults";
 
 const SearchResults = ({ match }) => {
   const [results, setResults] = useState([]);
@@ -19,20 +20,24 @@ const SearchResults = ({ match }) => {
 
   return (
     <div className="search-results">
-      <div className="results-list">
-        {results.map((result) => {
-          return (
-            <DrinkCard
-              className="result-card"
-              category={result.strCategory}
-              key={result.idDrink}
-              drinkId={result.idDrink}
-              drinkName={result.strDrink}
-              drinkImg={result.strDrinkThumb}
-            />
-          );
-        })}
-      </div>
+      {results.length !== 0 ? (
+        <div className="results-list">
+          {results.map((result) => {
+            return (
+              <DrinkCard
+                className="result-card"
+                category={result.strCategory}
+                key={result.idDrink}
+                drinkId={result.idDrink}
+                drinkName={result.strDrink}
+                drinkImg={result.strDrinkThumb}
+              />
+            );
+          })}
+        </div>
+      ) : (
+        <NoResults />
+      )}
     </div>
   );
 };
