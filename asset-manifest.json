@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/the-boozer-catalogue/static/css/main.4ca9710a.chunk.css",
+    "main.js": "/the-boozer-catalogue/static/js/main.eac1d36f.chunk.js",
+    "main.js.map": "/the-boozer-catalogue/static/js/main.eac1d36f.chunk.js.map",
+    "runtime-main.js": "/the-boozer-catalogue/static/js/runtime-main.4d721f77.js",
+    "runtime-main.js.map": "/the-boozer-catalogue/static/js/runtime-main.4d721f77.js.map",
+    "static/js/2.210d3cb5.chunk.js": "/the-boozer-catalogue/static/js/2.210d3cb5.chunk.js",
+    "static/js/2.210d3cb5.chunk.js.map": "/the-boozer-catalogue/static/js/2.210d3cb5.chunk.js.map",
+    "static/js/3.af511474.chunk.js": "/the-boozer-catalogue/static/js/3.af511474.chunk.js",
+    "static/js/3.af511474.chunk.js.map": "/the-boozer-catalogue/static/js/3.af511474.chunk.js.map",
+    "index.html": "/the-boozer-catalogue/index.html",
+    "static/css/main.4ca9710a.chunk.css.map": "/the-boozer-catalogue/static/css/main.4ca9710a.chunk.css.map",
+    "static/js/2.210d3cb5.chunk.js.LICENSE.txt": "/the-boozer-catalogue/static/js/2.210d3cb5.chunk.js.LICENSE.txt",
+    "static/media/CategoriesMenu.css": "/the-boozer-catalogue/static/media/shots_cat.a017ad2d.jpg",
+    "static/media/Header.css": "/the-boozer-catalogue/static/media/header_bg.6678b328.jpg",
+    "static/media/logo-v2.261e85b8.png": "/the-boozer-catalogue/static/media/logo-v2.261e85b8.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4d721f77.js",
+    "static/js/2.210d3cb5.chunk.js",
+    "static/css/main.4ca9710a.chunk.css",
+    "static/js/main.eac1d36f.chunk.js"
+  ]
+}
