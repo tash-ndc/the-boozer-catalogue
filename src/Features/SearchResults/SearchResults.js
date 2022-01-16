@@ -20,7 +20,7 @@ const SearchResults = ({ match }) => {
 
   return (
     <div className="search-results">
-      {results.length !== 0 ? (
+      {results ? (
         <div className="results-list">
           {results.map((result) => {
             return (
